@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden; /* ✅ hide horizontal scroll */
+  color: #0a340d;
+  background-color: #e2e9a8;
+}
+
+ul {
+  list-style-type: none;
+}
+body {
+  margin: 1rem;
+  text-align: center;
+}
+nav {
+  border: 2px solid #333;
+  border-radius: 2rem;
+
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  max-width: 95vw; /* ✅ constrain width */
+  overflow-wrap: break-word; /* ✅ allow text wrapping if needed */
+  box-sizing: border-box;
+  line-height: 5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+
+li:last-child {
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+
+nav li {
+  border-top: 1px solid #333;
+  display: block;
+  margin: 0;
+  transition: transform 0.3s ease, color 0.3s ease-in;
+  cursor: pointer;
+}
+
+nav a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #0a340d;
+  font-weight: bold;
+  z-index: 999;
+}
+
+/* When selected */
+nav li.raised {
+  transform: scale(1.05);
+  background-color: #e6cf99; /* optional highlight */
+}
+
+/* Optional: Change link color inside raised item */
+nav li.raised a {
+  color: #b31e1e;
+}
+
+h2 {
+  padding: 1rem;
+  background: #c7b45c;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  z-index: 999; /* ensure it appears above other content */
+  background-color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  color: #622506;
+}
+
+.cart-icon:hover {
+  transform: scale(1.15);
+  background-color: #e6cf99;
+}
+
+/* Mobile-Friendly */
+@media (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+  }
+}

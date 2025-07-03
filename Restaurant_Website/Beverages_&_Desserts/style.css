@@ -1,0 +1,190 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e9a8;
+  color: #0a340d;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #0a340d;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(136, 88, 88, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-home:hover {
+  transform: scale(1.05);
+}
+
+.ToOthers {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem;
+
+  font-size: 1rem;
+  color: #0a340d;
+
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.ToOthers:hover {
+  transform: scale(1.05);
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin: 1rem 2rem;
+  text-align: left;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #f4cb42;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: background 0.3s, transform 0.2s;
+}
+
+.filter-buttons button:hover {
+  background-color: #f8a100;
+}
+
+.filter-buttons button.active {
+  background-color: #d97706;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for all cards */
+.drink-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+/* Individual card (matches pizza style) */
+figure {
+  width: 340px;
+  background: hsla(12, 73%, 32%, 0.2); /* Warm orange translucent background */
+  border-radius: 12px;
+  padding-bottom: 1rem;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: 3px solid darkgreen;
+}
+
+/* Hover effect */
+figure:hover {
+  transform: scale(1.05);
+}
+
+/* Image container */
+.items {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Image Styling */
+.items img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  display: block; /* To eliminate unexpected spacing */
+}
+
+/* Caption Section */
+figcaption.caption-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* Name of Item */
+.item-name {
+  background-color: #fff8d6;
+  border: 2px solid #c59f00;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+/* Dessert Ingredient Section */
+.dessert-ingredients {
+  background-color: #fff8d6;
+  border: 2px solid #c59f00;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .drink-cards {
+    padding: 1rem;
+  }
+
+  figure {
+    width: 90%;
+  }
+
+  .filter-buttons {
+    text-align: center;
+  }
+}

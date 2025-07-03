@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Burger-Varity</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Burger_Images/favicon-32x32.png?v=5"
+    />
+  </head>
+  <body>
+    <a href="../index.html" class="back-home">← Back to Home Page</a>
+
+    <h1>Burger Varities 🍔</h1>
+    <section class="burger-item">
+      <div class="filter-buttons">
+        <button onclick="filterBurgers('all')">All 🍔</button>
+        <button onclick="filterBurgers('veg')">Veg 🍀</button>
+        <button onclick="filterBurgers('non-veg')">Non-Veg 🍗</button>
+      </div>
+
+      <div class="burger-cards">
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/VegBurger-removebg-preview.png"
+              alt="Veg Burger"
+              title="Veg Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Veg Burger</span>
+              <span class="item-price">₹129</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/VeggieBurger-removebg-preview.png"
+              alt="Veggie Burger"
+              title="Veggie Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Veggie Burger</span>
+              <span class="item-price">₹139</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/DoubleVegPatty-removebg-preview.png"
+              alt="Double Veg Patty"
+              title="Double Veg Patty"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Double Veg Patty</span>
+              <span class="item-price">₹159</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/KoreanSpicyVegBurger.png"
+              alt="Korean Spicy Veg Burger"
+              title="Korean Spicy Veg Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Korean Spicy Veg Burger</span>
+              <span class="item-price">₹169</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/VegWhopper-removebg-preview.png"
+              alt="Veg Whopper"
+              title="Veg Whopper"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Veg Whopper</span>
+              <span class="item-price">₹179</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/WhopperJrVeg-removebg-preview.png"
+              alt="Whopper Jr Veg Burger"
+              title="Whopper Jr Veg Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Whopper Jr Veg</span>
+              <span class="item-price">₹155</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/CrispyVegMeal-removebg-preview.png"
+              alt="Crispy Veg Meal"
+              title="Crispy Veg Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Crispy Veg Meal</span>
+              <span class="item-price">₹175</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/VegDoublePattyMeal-removebg-preview.png"
+              alt="Veg Double Patty Meal"
+              title="Veg Double Patty Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Veg Double Patty Meal</span>
+              <span class="item-price">₹185</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/VeggieMeal-removebg-preview.png"
+              alt="Veggie Meal"
+              title="Veggie Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Veggie Meal</span>
+              <span class="item-price">₹169</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/WhopperJrVegMeal-removebg-preview.png"
+              alt="Whopper Jr Veg Meal"
+              title="Whopper Jr Veg Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Whopper Jr Veg Meal</span>
+              <span class="item-price">₹179</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/WhoPperVegMeal-removebg-preview.png"
+              alt="Whopper Veg Meal"
+              title="Whopper Veg Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Whopper Veg Meal</span>
+              <span class="item-price">₹199</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/ChickenBurger-removebg-preview.png"
+              alt="Chicken Burger"
+              title="Chicken Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Chicken Burger</span>
+              <span class="item-price">₹159</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/ChickenWhopper-removebg-preview.png"
+              alt="Chicken Whopper"
+              title="Chicken Whopper"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Chicken Whopper</span>
+              <span class="item-price">₹179</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/Crispychicken-removebg-preview.png"
+              alt="Crispy Chicken"
+              title="Crispy Chicken"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Crispy Chicken</span>
+              <span class="item-price">₹175</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/ChickenDoublePattyMeal-removebg-preview.png"
+              alt="Double Chicken Patty"
+              title="Double Chicken Patty"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Double Chicken Patty</span>
+              <span class="item-price">₹189</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/KoreanSpicyChickenBurger.png"
+              alt="Korean Spicy Chicken Burger"
+              title="Korean Spicy Chicken Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Korean Spicy Chicken</span>
+              <span class="item-price">₹195</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/WhopperJrChicken-removebg-preview.png"
+              alt="Whopper Jr Chicken Burger"
+              title="Whopper Jr Chicken Burger"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Whopper Jr Chicken</span>
+              <span class="item-price">₹175</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/ChickenMeal-removebg-preview.png"
+              alt="Chicken Meal"
+              title="Chicken Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Chicken Meal</span>
+              <span class="item-price">₹185</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/ChickenDoublePattyMeal-removebg-preview.png"
+              alt="Chicken Double Patty Meal"
+              title="Chicken Double Patty Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Chicken Double Patty Meal</span>
+              <span class="item-price">₹199</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/CrispyChickenMeal-removebg-preview.png"
+              alt="Crispy Chicken Meal"
+              title="Crispy Chicken Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Crispy Chicken Meal</span>
+              <span class="item-price">₹195</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/WhopperJrChickenMeal-removebg-preview.png"
+              alt="Whopper Jr Chicken Meal"
+              title="Whopper Jr Chicken Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Whopper Jr Chicken Meal</span>
+              <span class="item-price">₹195</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="non-veg">
+          <div class="burger-image-wrapper">
+            <img
+              src="Burger_Images/WhopperJrChickenMeal-removebg-preview.png"
+              alt="Whopper Chicken Meal"
+              title="Whopper Chicken Meal"
+            />
+          </div>
+          <figcaption>
+            <div class="caption-box">
+              <span class="item-name">Whopper Chicken Meal</span>
+              <span class="item-price">₹199</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="nav-links">
+      <a href="../Pizza/index.html" class="ToOthers">Go to Pizza Page →</a>
+
+      <a href="../FriedRice/index.html" class="ToOthers"
+        >Go to Fried Rice Page →</a
+      >
+
+      <a href="../Others/index.html" class="ToOthers"
+        >Go to Other Items Page →</a
+      >
+      <a href="../Noodles_&_Pasta/index.html" class="ToOthers"
+        >Go to Noodles & Pasta Page →</a
+      >
+      <a href="../Beverages_&_Desserts/index.html" class="ToOthers"
+        >Go to Beverages & Drinks Page →</a
+      >
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

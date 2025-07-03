@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e9a8;
+  color: #0a340d;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #0a340d;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(136, 88, 88, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-home:hover {
+  transform: scale(1.05);
+}
+
+.ToOthers {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem;
+
+  font-size: 1rem;
+  color: #0a340d;
+
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.ToOthers:hover {
+  transform: scale(1.05);
+}
+
+/* Filter buttons */
+.filter-buttons {
+  margin: 1.5rem 1rem;
+  text-align: left;
+}
+
+.filter-buttons button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem 0.5rem 0;
+  font-size: 1rem;
+  border: none;
+  background-color: #f4cb42;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.filter-buttons button:hover {
+  background-color: #f8a100;
+}
+
+.filter-buttons button.active {
+  background-color: #d97706;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for all pizza cards */
+.pizza-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+/* Individual pizza card */
+figure {
+  width: 340px;
+  background: hsla(12, 73%, 32%, 0.2);
+  border-radius: 12px;
+  padding: 1rem 0;
+  margin: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Hover effect */
+figure:hover {
+  transform: scale(1.05);
+}
+
+/* Image wrapper */
+.pizza-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+.pizza-image-wrapper img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Name + Price wrapper */
+.caption-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 90%;
+  margin: 0 auto 0.5rem;
+  box-sizing: border-box;
+}
+
+.item-name {
+  flex-grow: 3;
+  flex-shrink: 1; /* Allow shrinking slightly if needed */
+  flex-basis: auto; /* ← Fix: Let it base on content */
+  min-width: 0; /* ← Prevent overflow */
+  background-color: #fff8d6;
+  border: 2px solid #c59f00;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-price {
+  flex-grow: 1;
+  flex-shrink: 1; /* Allow minor shrinking */
+  flex-basis: auto; /* ← Fix: Let it size by content */
+  min-width: 0; /* ← Prevent overflow */
+  background-color: #fff8d6;
+  border: 2px solid #c59f00;
+  border-radius: 8px;
+  padding: 0.4rem 0.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #b12704;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ingredients box */
+.pizza-ingredients {
+  background-color: #fff8d6;
+  border: 2px solid #c59f00;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Veg and Non-Veg Borders */
+figure.veg {
+  border: 3px solid darkgreen;
+}
+
+figure.non-veg {
+  border: 3px solid maroon;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  background-color: white;
+  color: #622506;
+  padding: 0.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.15);
+  background-color: #ffe6a0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .pizza-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    width: 90%;
+  }
+
+  .item-name,
+  .item-price {
+    flex: 1 1 100%; /* Stack vertically if needed */
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../CommonImages/favicon-32x32.png?v=3"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #e2e9a8;
+        font-family: Arial, sans-serif;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative; /* important for absolute children */
+      }
+      .back-home {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        display: inline-block;
+        font-size: 1rem;
+        color: #0a340d;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(136, 88, 88, 0.1);
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      .back-home:hover {
+        transform: scale(1.02);
+      }
+
+      .container {
+        background: hsla(12, 73%, 32%, 0.2);
+        color: #0a340d;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        width: 100%;
+        border: 3px solid rgb(58, 7, 7);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+      .container:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back-home">← Back to Home Page</a>
+    <div class="container">
+      <h2>Hello Buddy !!</h2>
+      <p>So, Finally you checked this also☺️ ,Great!!</p>
+      <p>But Sorry, It's a showcase only..</p>
+    </div>
+  </body>
+</html>

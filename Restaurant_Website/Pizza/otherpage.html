@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Pino'z Menu</title>
+    <style>
+      .back-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: #0a340d;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 2px 6px rgba(136, 88, 88, 0.1);
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      .back-button:hover {
+        transform: scale(1.05);
+      }
+
+      body {
+        background-color: #e2e9a8;
+        color: #0a340d;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+      }
+      .back-wrapper {
+        width: 100%;
+        max-width: 1000px;
+        align-self: flex-start; /* keep the link on left */
+        margin-bottom: 1rem;
+      }
+      .image img {
+        max-width: 90vw;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="back-wrapper">
+      <a href="index.html" class="back-button" title="Back to Pizza Page"
+        >← Back to Pizza</a
+      >
+    </div>
+    <div class="image">
+      <img
+        src="../CommonImages/25f5274e98d3e2a0243271e62451c433.webp"
+        alt="Menu"
+      />
+    </div>
+  </body>
+</html>

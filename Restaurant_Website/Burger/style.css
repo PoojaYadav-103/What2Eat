@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+body {
+  background-color: #e2e9a8;
+  color: #0a340d;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #0a340d;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(136, 88, 88, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-home:hover {
+  transform: scale(1.05);
+}
+
+.ToOthers {
+  display: block;
+  width: fit-content;
+  padding: 0.5rem;
+
+  font-size: 1rem;
+  color: #0a340d;
+
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.ToOthers:hover {
+  transform: scale(1.05);
+}
+
+/*Filter buttons */
+.filter-buttons {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.filter-buttons button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #f4cb42;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.filter-buttons button:hover {
+  background-color: #f8a100;
+}
+
+.filter-buttons button.active {
+  background-color: #d97706;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.burger-cards {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.burger-item {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  font-size: larger;
+}
+
+/* Border box around each burger card */
+figure {
+  width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  background-color: hsla(12, 73%, 32%, 0.2);
+}
+/* Hover effect */
+figure:hover {
+  transform: scale(1.05);
+}
+
+/*  Background image applied only behind the image */
+.burger-image-wrapper {
+  background-image: url("../CommonImages/backg.png");
+  padding-bottom: 2px;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/*  Image */
+.burger-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Caption */
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 0.5rem; */
+}
+
+figcaption.caption-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 90%;
+  margin: 0 auto 0.5rem;
+  box-sizing: border-box;
+}
+
+.item-name,
+.item-price {
+  background-color: #fff8d6;
+  border: 2px solid #c59f00;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  width: auto;
+  /*  overflow: hidden; */
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  min-width: 40%;
+}
+.item-price {
+  color: #b12704;
+}
+
+/* 🌿 Veg Border */
+figure.veg {
+  border: 3px solid darkgreen;
+}
+
+/* 🍗 Non-Veg Border */
+figure.non-veg {
+  border: 3px solid maroon;
+}
+
+/* 📱 Mobile-Friendly */
+@media (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+  }
+}
